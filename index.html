@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create user</title>
+  </head>
+  <body>
+    <h1>Create user</h1>
+    <hr />
+    <form action="create-user.html" method="get">
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="email" id="email" />
+      <br />
+      <label for="username">Username:</label>
+      <input
+        type="text"
+        name="username"
+        placeholder="username"
+        size="30"
+        maxlength="12"
+        id="username"
+      />
+      <br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        name="password"
+        size="30"
+        maxlength="8"
+        placeholder="password"
+        id="password"
+      />
+      <br />
+      <label for="textarea">Bio:</label>
+      <br />
+      <textarea
+        name="bio"
+        placeholder="give a brief description of this user"
+      ></textarea>
+      <br />
+      <!-- <input name="userid" value="2300" /> -->
+      <fieldset>
+        <legend>Interests</legend>
+        <label for="">Select your favorite superhero</label>
+        <input type="radio" name="superheroes" value="Superman" id="" />Superman
+        <input type="radio" name="superheroes" value="Batman" id="" />Batman
+        <input
+          type="radio"
+          name="superheroes"
+          checked
+          value="Wonder Woman"
+          id=""
+        />Wonder Woman
+        <input type="radio" name="superheroes" value="Flash" id="" />Flash
+        <input type="radio" name="superheroes" value="Thor" id="" />Thor
+        <input type="radio" name="superheroes" value="Hulk" id="" />Hulk
+        <br />
+        <label for="">Select your favortite video game</label>
+        <input type="checkbox" checked name="favoritevideogame" id="" />Fifa
+        <input type="checkbox" name="favoritevideogame" id="" />Nhl
+        <input type="checkbox" name="favoritevideogame" id="" />Resident Evil
+        <input
+          type="checkbox"
+          checked
+          name="favoritevideogame"
+          id=""
+        />Uncharted
+        <br />
+      </fieldset>
+      <input type="button" value="create-user" />
+    </form>
+  </body>
+</html>
